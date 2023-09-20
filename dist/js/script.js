@@ -15,3 +15,40 @@ if (navbarToggle && navbarMenu && navbarOverlay) {
     })
 }
 // end: Navbar
+
+
+
+// start: Produk
+new Swiper('.swiper-product', {
+    slidesPerView: 3,
+    spaceBetween: 24,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        }
+    }
+});
+// end: Produk
+
+
+
+// start: Galeri
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+});
+// end: Galeri

@@ -7,14 +7,26 @@
 
 
 .navbar-menu {
-    @apply -translate-x-full sm:-translate-x-0 transition-transform;
+    @apply -translate-x-full sm:-translate-x-0;
 }
 .navbar-menu.active {
-    @apply -translate-x-0;
+    @apply -translate-x-0 transition-transform;
 }
 .navbar-overlay {
-    @apply opacity-0 invisible transition-opacity;
+    @apply opacity-0 invisible;
 }
 .navbar-overlay.active {
-    @apply opacity-100 visible sm:opacity-0 sm:invisible;
+    @apply opacity-100 visible sm:opacity-0 sm:invisible transition-opacity;
+}
+.grid-item {
+    @apply w-full sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] mb-6;
+}
+.swiper-product .swiper-pagination {
+    @apply -bottom-0;
+}
+.swiper-product .swiper-pagination-bullet {
+    @apply w-2 h-2 mx-0.5;
+}
+.swiper-product .swiper-pagination-bullet-active {
+    @apply bg-rose-500 outline outline-rose-500 outline-offset-2;
 }
