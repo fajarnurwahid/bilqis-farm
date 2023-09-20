@@ -8,7 +8,7 @@ module.exports = {
         'lora': ['"Lora"', 'serif'],
       },
       backgroundImage: {
-        'hero': 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("dist/img/hero.jpg")',
+        'hero': 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/hero.jpg")',
       }
     },
   },
